@@ -1,0 +1,19 @@
+.height {
+    height: 28rem;
+    transition: .3s ease-out;
+}
+
+.skeleton {
+    opacity: .5;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}

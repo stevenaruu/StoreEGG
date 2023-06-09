@@ -1,0 +1,9 @@
+.heigh {
+    height: 50rem;
+    transition: .3s ease-out;
+}
+
+.heigh:hover {
+    transform: scale(1.01);
+    transition: .3s ease-in;
+}
