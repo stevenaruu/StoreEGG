@@ -61,7 +61,7 @@ class HomePage extends Component<IHomePageProps & RouteComponentProps & IHomePag
                 />
                 <Button
                     text='My Product'
-                    color='bg-yellow-600'
+                    color='bg-yellow-600 hover:bg-amber-600'
                     container='container'
                     onClick={this.goToMyProductPage}
                 />

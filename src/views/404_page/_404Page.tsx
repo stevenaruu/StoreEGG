@@ -26,7 +26,7 @@ class _404Page extends Component<I404PageProps & RouteComponentProps, I404PageSt
                     </p>
                     <Button
                         text='Back to App'
-                        color='bg-yellow-600'
+                        color='bg-yellow-600 hover:bg-amber-600'
                         container=''
                         onClick={this.goToHomePage}
                     />

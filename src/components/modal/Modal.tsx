@@ -4,13 +4,11 @@ import { useAppSelector } from '../../redux/redux';
 import { ADD_BALANCE, MIN_BALANCE, selectBalance } from '../../features/BalanceSlice';
 import { BUY_PRODUCT, SELL_PRODUCT, selectProduct } from '../../features/MyProductSlice';
 import { IModalProps } from './Modal.interfaces';
-import { useHistory } from 'react-router-dom';
 import { useState } from 'react';
 import AlertModal from '../alert_modal/AlertModal';
 
 const Modal = (props: IModalProps) => {
     const { modalCSS, product } = props;
-    const history = useHistory();
     const dispatch = useDispatch();
     const balance = useAppSelector(selectBalance)
     const myProduct = useAppSelector(selectProduct)
@@ -18,7 +16,7 @@ const Modal = (props: IModalProps) => {
     const [status, setStatus] = useState("")
     const [message, setMessage] = useState("")
     const [statusColor, setStatusColor] = useState("")
-    const btnColor = product.transaction === "BUY" ? "bg-yellow-600" : "bg-cyan-400"
+    const btnColor = product.transaction === "BUY" ? "bg-yellow-600 hover:bg-amber-600" : "bg-cyan-400 hover:bg-cyan-500"
 
     const handleBuyProduct = () => {
         const newId = myProduct.length === 0 ? 1 : myProduct.length + 1;
