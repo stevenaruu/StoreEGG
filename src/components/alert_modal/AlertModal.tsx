@@ -20,7 +20,7 @@ const AlertModal = (props: IAlertModalProps) => {
 
     return (
         <div className="h-screen bg-black/50 fixed flex left-0 right-0 top-0 bottom-0 justify-center items-center z-20">
-            <div className="bg-white h-3/6 w-3/12 p-10 shadow-lg rounded" onClick={handleModalClick}>
+            <div className="bg-white h-4/6 w-4/12 p-10 shadow-lg rounded flex justify-center items-center flex-col" onClick={handleModalClick}>
                 <div className="h-2/6 flex justify-center items-center">
                     <img src={image} alt="" className="max-w-full max-h-full" />
                 </div>
